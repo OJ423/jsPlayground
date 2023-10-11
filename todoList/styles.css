@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Gabarito, 'Lato', sans-serif;
+}
+
+body {
+    background: url(img/todolist-bkg.jpg) no-repeat center center/cover fixed;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content:center;
+    align-items: first baseline;
+}
+
+#add-task-container {
+    width: 450px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 15px;
+    padding: 20px;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+input {
+    flex: 5;
+    margin-right: 10px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    padding: 5px;
+}
+
+
+#add-task {
+    font-size: 1.2rem;
+    padding: 5px;
+    color:dodgerblue;
+    border-radius: 5px;
+    cursor: pointer;
+    flex: 1;
+    border: solid 1px dodgerblue;
+    transition: .8s;
+}
+#add-task:hover {
+    background-color: dodgerblue;
+    color: white;
+}
+
+/* Styling for Tasks */
+
+.task {
+    width: 100%;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.task li {
+    list-style: none;
+    flex: 4;
+    padding: 5px;
+    font-size: 1.3rem;
+    margin: 10px;
+}
+
+.task button {
+    flex: 1;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.task .checkTask {
+    color:chocolate;
+    transition: .6s;
+    margin-right: 5px;
+    border: solid 2px chocolate;
+    font-size: 1.5rem;
+}
+.task .checkTask:hover {
+    background-color: chocolate;
+    color: white;
+}
+
+.task .deleteTask {
+    color:brown;
+    transition: .6s;
+    margin-right: 5px;
+    border: solid 2px brown;
+    font-size: 1.3rem;
+}
+
+.task .deleteTask:hover {
+    color: white;
+    background-color: brown;
+
+}
