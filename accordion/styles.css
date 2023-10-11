@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Gabarito, 'Lato', sans-serif;
+}
+
+body {
+    background: url(img/jonny-gios-Jj4zuAhFI3Y-unsplash.jpg) no-repeat center center/cover;
+    height: 100vh;
+    position: relative;
+}
+
+#open-btn {
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    height: 80px;
+    font-size: 1.5rem;
+    background: transparent;
+    color: #fff;
+    border: solid 5px white;
+    border-radius: 5px;
+    box-shadow: 0 0 20px;
+    padding: 5px 30px;
+    line-height: 10px;
+    transition: 1s;
+    cursor: pointer;
+    font-family: Gabarito, Leto, sans-serif;
+}
+
+#open-btn:hover {
+    background: white;
+    color: black;
+}
+
+#modal {
+    background: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20%;
+    height: auto;
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    animation-name: animatemodal;
+    animation-duration: 0.7s;
+}
+
+#modal img {
+    width: 100%;
+    height: auto;
+}
+
+#close-btn {
+    position: absolute;
+    cursor: pointer;
+    top: 20px;
+    right: 20px;
+    font-size: 3rem;
+    transition: 0.3s;
+
+}
+
+#close-btn:hover {
+    cursor: pointer;
+    font-size: 3rem;
+    color:brown;
+}
+
+#modal-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgb(0,0,0, 0.2);
+}
+
+/* Modal Animation */
+
+@keyframes animatemodal {
+    from {
+        top: -300px;
+        opacity: 0;
+    }
+    to {
+        top:50%;
+        opacity: 1;
+    }
+}
