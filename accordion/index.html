@@ -14,21 +14,24 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <title>Modal Massive</title>
+        <title>An Accordion</title>
     </head>
     <body>
-        <!-- Modal Button -->
-        <button id="open-btn">
-            <p>Open the box to find out.</p>
-        </button>
-        <!-- Modal Box -->
-        <div id="modal-container">
-            <div id="modal">
-                <img src="img/Timothy-Troll.jpg">
-                <p>Here I am</p>
-                <div id="close-btn">&times;</div>
+        <div class="accordion">
+            <h2 class="accordion-title">Frequently Asked Questions</h2>
+            <div class="content-container">
+                <div class="question">What is the return policy?</div>
+                <div class="answer">We don't have one. You buy it. You keep it. You don't like it. Not our problem. Shop somewhere else.</div>
+            </div>
+            <div class="content-container">
+                <div class="question">How long does delivery take?</div>
+                <div class="answer">Just as long as it takes. Sometimes it can be next day. Other times, when we forget to post, it could be months, if ever. Tough luck if it's the latter. </div>
+            </div>
+            <div class="content-container">
+                <div class="question">Do you sell animal skins?</div>
+                <div class="answer">No. We sell skateboards. What kind of question is this anyway?</div>
             </div>
         </div>
-        <script src="modal.js"></script>
+        <script src="accordion.js"></script>
     </body>
 </html>
