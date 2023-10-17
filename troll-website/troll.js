@@ -59,3 +59,25 @@ window.addEventListener('click', function(e){
         modalContainerPublish.style.display = 'none';
     }
 })
+
+// Goat Animation
+
+window.onload = () => {
+    startSetGoatAnimation();
+  };
+  
+  function startSetGoatAnimation() {
+    const refreshRate = 1000 / 60;
+    const maxXPosition = -300;
+    let goat = document.getElementsByClassName('goat')[0];
+    let speedX = 1;
+    let positionX = -500;
+  
+    window.setInterval(() => {
+      positionX = positionX + speedX;
+      if (positionX > maxXPosition || positionX < -500) {
+        speedX = speedX * (-1);
+      }
+      goat.style.left = positionX + 'px';
+    }, refreshRate);
+  }
