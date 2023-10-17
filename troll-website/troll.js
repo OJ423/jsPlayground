@@ -71,11 +71,11 @@ window.onload = () => {
     const maxXPosition = -300;
     let goat = document.getElementsByClassName('goat')[0];
     let speedX = 1;
-    let positionX = -500;
+    let positionX = -1060;
   
     window.setInterval(() => {
       positionX = positionX + speedX;
-      if (positionX > maxXPosition || positionX < -500) {
+      if (positionX > maxXPosition || positionX < -1060) {
         speedX = speedX * (-1);
       }
       goat.style.left = positionX + 'px';
